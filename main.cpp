@@ -109,7 +109,10 @@ int main(int argc, char **argv) {
 	Sound::init();
 
 	//------------ load assets --------------
+	std::cout << "Loading assets..." << std::endl;
 	call_load_functions();
+	std::cout << "Assets loaded." << std::endl;
+
 
 	//------------ create game mode + make current --------------
 	Mode::set_current(std::make_shared< PlayMode >());

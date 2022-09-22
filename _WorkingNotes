@@ -1,0 +1,8 @@
+## Helpful
+blender --background --python scenes/export-scene.py -- scenes/forest.blend dist/forest.scene
+
+blender --background --python scenes/export-meshes.py -- scenes/forest.blend dist/forest.pnct
+
+## TODO
+remove camera movement, add playevents for music
+figure out data representation of rythm

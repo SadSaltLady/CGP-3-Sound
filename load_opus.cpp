@@ -27,6 +27,7 @@ void load_opus(std::string const &filename, std::vector< float > *data_) {
 
 	//get length in samples:
 	ogg_int64_t length = op_pcm_total(op.get(), -1);
+	std::cout << " length=" << length << " samples"; std::cout.flush();
 	if (length >= 0) {
 		data.reserve(length);
 	} else {
